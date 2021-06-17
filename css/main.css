@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Circular Std", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  white-space:nowrap;
+  color: rgba(0, 0, 0, 1);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.wrapper {
+  width: 1330px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 10px 50px 10px;
+}
+
+.wrapper-main {
+  width: 1075px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.main-section {
+  display: flex;
+}
+
+@media screen and (max-width: 800px) {
+  .main-section {
+    flex-direction: column;
+  }
+}
